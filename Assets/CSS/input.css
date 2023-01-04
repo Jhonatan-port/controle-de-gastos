@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.titulo__card{
+    @apply text-center text-xl font-bold
+}
+
+.subtitulo__card{
+    @apply text-center text-lg font-bold before:content-['R$']
+}
+
+.card__valores{
+    @apply w-full lg:w-1/2 mx-auto flex flex-col rounded-lg py-4 bg-slate-100 gap-y-4 shadow-lg border border-slate-500
+}
+
+.input__padrao{
+    @apply w-11/12 mx-auto p-2 box-border
+}
+
+.espaco__padrao__th{
+    @apply px-4 py-2 border border-black
+}
+
+.inputs__flex{
+    @apply flex flex-col gap-4 
+}
+
+.btn__padrao{
+    @apply bg-blue-300 w-4/5 mx-auto rounded-xl transition-all font-bold uppercase h-10
+}
+
+.btn__padrao:hover{
+    @apply bg-blue-700 text-white 
+}
+
+.celula__tabela {
+    @apply bg-white border border-black text-center
+}
+
+
+.celula__valor {
+    @apply bg-white border border-black text-center before:content-['R$']
+}
+
+.celula__Gasto {
+    @apply bg-white border border-black text-center text-red-500
+}
+.celula__Recebido {
+    @apply bg-white border border-black text-center text-green-500
+}

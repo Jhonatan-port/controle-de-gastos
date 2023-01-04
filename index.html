@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/output.css">
+    <link rel="icon" href="./Assets/Images/caixa-registradora.webp">
+    <title>Controle de Gastos</title>
+</head>
+
+<body class="bg-slate-50">
+    <div class="bg-green-400 w-full h-60 fixed top-0 right-0 left-0 -z-10"></div>
+
+    <div class="w-4/5 mx-auto mt-24 lg:mt-48 grid grid-cols-1 gap-y-10">
+        <section class="card__valores ">
+            <h1 class="titulo__card">Cadastre seu gasto/provento:</h1>
+            <form class="inputs__flex" id="form__recebido">
+                <select id="tipo" name="tipo" class="input__padrao">
+                    <option value="" disabled selected>Selecione um tipo</option>
+                    <option value="Gasto">Gasto</option>
+                    <option value="Recebido">Recebido</option>
+                </select>
+                <input type="text" class="input__padrao" id="titulo" placeholder="Digite o titulo do recebimento"
+                    required>
+                <input type="number" class="input__padrao" id="valor" placeholder="Digite o Valor" required>
+            </form>
+            <button class="btn__padrao" id="btn__adicionar">Adicionar</button>
+        </section>
+
+    </div>
+
+    <div class="w-4/5 mx-auto mt-4  grid grid-cols-1 gap-y-10">
+        <section class="card__valores ">
+            <h1 class="titulo__card">Total de valores adquiridos:</h1>
+            <h2 class="subtitulo__card" id="valor__adquirido">0.00</h2>
+        </section>
+
+    </div>
+    <table class="table-auto w-4/5 mx-auto mt-20">
+        <thead>
+            <tr class="bg-gray-300 text-gray-700 font-bold">
+                <th class="espaco__padrao__th">Tipo</th>
+                <th class="espaco__padrao__th">Titulo</th>
+                <th class="espaco__padrao__th">Valor</th>
+            </tr>
+        </thead>
+        <tbody id="tabela__valores">
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="./Assets/JS/script.js"></script>
+
+</html>
